@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0aa0dc2cc0.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .storebutton {
+            display: flex;
+            justify-content: center;
+        }
+        .tossmain {
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 100;
+        }
+
+        .tossmain img {
+            vertical-align: middle;
+        }
+
+        .tossmain a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0078d7;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            display: inline-block;
+        }
+
+        .tossmain a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #0078d7;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+
+        .tossmain a:hover {
+            color: #005bb5;
+            transform: translateY(-2px);
+        }
+
+        .tossmain a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .tossmain div {
+            margin-top: 20px;
+        }
+
+        .tossmain .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tossmain button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .tossmain button img {
+            margin-right: 10px;
+        }
+
+        .app-store {
+            background-color: #0078d7;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 120, 215, 0.3);
+        }
+
+        .google-play {
+            background-color: #34a853;
+            color: white;
+            box-shadow: 0 4px 8px rgba(52, 168, 83, 0.3);
+        }
+
+        .tossmain button:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .slider {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .section {
+            padding: 40px 20px;
+            background-color: #f0f0f0;
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .section h4 {
+            color: #0078d7;
+        }
+
+        .section h5 {
+            color: #666;
+        }
+
+        .gray-bg {
+            background-color: gray;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        .gray-bg h2 {
+            margin-bottom: 20px;
+        }
+
+        .gray-bg h4 {
+            color: lightblue;
+        }
+
+        .gray-bg h5 {
+            margin-top: 20px;
+        }
+
+        .feature-section {
+            padding: 40px 20px;
+        }
+
+        .feature-section h1 {
+            margin-bottom: 20px;
+        }
+
+        .feature-section h4 {
+            margin: 20px 0;
+        }
+
+        .feature-section img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    .slider {
+    width: 300px ;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="tossmain">
+        <img src="1.jfif" alt="toss" width="70" height="30" >
+        <a href="https://toss.im/team" target='_blank'>회사소개</a>
+        <a href="https://support.toss.im/" target='_blank' >고객센터</a>
+        <a href="https://support.toss.im/faq" target='_blank'>자주 묻는 질문</a>
+        <a href="https://toss.im/tosscert" target='_blank'>토스인증서</a>
+        <a href="https://toss.im/career" target='_blank'>채용</a>
+    
+        <h1>금융의 모든 것 토스에서 쉽고 간편하게</h1>
+         <div class="storebutton" >
+            <button class="app-store"  onclick="location.href='https://apps.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328'"> <img src="img/applekorea.png" alt="" width="30" height="30"><h4>App Store</h4></button>
+            <button class="google Play" onclick="location.href='https://play.google.com/store/apps/details?id=viva.republica.toss'"><img src="img/googleplay.png" alt="" width="30" height="30" ><h4>Google Play</h4></button>
+        </div>
+    </div>
+
+    <div>
+      <img src="img/2.png" alt="img1">
+    </div>
+
+    <div style="background-color: gray;" >
+        <h4 style="color: blue;"> 홈 · 소비 </h4>
+        <h2>내 돈 관리, <br> 지출부터 일정까지 <br> 똑똑하게</h2>
+        <div class="slider">
+            <img src="img/section1_1_home_01.png" alt="img" >
+            <img src="img/section1_1_home_02.png" alt="img" >
+            <img src="img/section1_3_loan_01.png" alt="img" >
+            <img src="img/section1_3_loan_02.png" alt="img" >
+            <img src="img/section1_3_loan_03.png" alt="img" >
+            <img src="img/section1_5_stock_01.png" alt="img">
+        </div>
+        <h4>토스에 계좌와 카드를 연결해보세요. <br> 계좌 잔액, 대출·투자 내역은 기본, <br> 일자별 소비와 수입까지 한 번에 볼 수 있어요.</h4>
+    </div>
+
+    <div>
+        
+        <img src="img/istockphoto-1911521695-612x612.jpg" alt="" class="img" ><br>
+        <h1>토스로<br>나에게 딱 맞게</h1>
+        <img src="img/section2_1_document.jpg" alt="" class="img1"><h1>내 문서함 <span style="color: gray;"> 공공문서 확인부터 납부까지 한번에</span></h1><br>
+        <h4>건강검진, 국가장학금 신청, 교통범칙금·과태로 납부,<br>그동안 종이로 받았던 문서들 꼼꼼히 챙기느라 고생했어요. <br>앞으로는 토스 내 문서함에서 간단히 받아보고 납부할 수 있어요.</h4>
+        <img src="img/section2_2_insu_01.jpg" alt="" class="img2"><h1>보험<br><span style="color: gray;">조회부터 상담, <br>병원비 돌려받기를 간편하게</span></h1><br>
+        <img src="img/section2_2_insu_02.jpg" alt="" class="img3"><br>
+        <h4>또래보다 보험료는 적절하게 내고 있는지, 낸 만큼 보장받고 있는지 확인해보세요. <br>전문가와의 상담을 통해 내개 딱 맞는 보험을 추천 받고, 병원비를 간편하게 청구할 수 있어요.</h4>
+        <img src="img/section2_3_apt_01.jpg" alt="" class="img4"><h1>내 부동산·자동차 <span style="color: grey;">정기적으로 관리해보세요.</span></h1>
+        <h4>집과 자동차의 공통점은 잘 사서, 잘 관리하고, 잘 팔아야 한다는 것. <br> 시세 조회부터 아파트 관리비 납부, 자동차 보험료 조회까지 <br> 부동산과 자동차 관리도 토스에서 시작해보세요.</h4>
+    </div> 
+
+    <script>
+             ScrollReveal().reveal('.img',{
+            delay:200, //이미지 뜨는 시간을 조절
+            distance:'60px', // 이미지 떠오르는 효과
+            origin : 'left', // 사진 뜨는 위치 
+            scale : 0.5, //크기 효과
+            
+        });
+        ScrollReveal().reveal('.img1',{
+            delay:400, //이미지 뜨는 시간을 조절
+            distance:'60px', // 이미지 떠오르는 효과
+            origin : 'left', // 사진 뜨는 위치 
+            scale : 0.5, //크기 효과
+            
+        });
+        ScrollReveal().reveal('.img2',{
+            delay:600,
+            distance:'60px',
+            origin : 'right'
+            
+        });
+        ScrollReveal().reveal('.img3',{
+            delay:800,
+            distance:'60px',
+            origin : 'left'
+            
+        });
+        ScrollReveal().reveal('.img4',{
+            delay:1000,
+            distance:'60px',
+            origin : 'right'
+            
+        });
+        ScrollReveal().reveal('.img5',{
+            delay:1200,
+            distance:'60px',
+            origin : 'left',
+            reset:true
+        });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script style="text-align: center;">
+    $('.slider').slick({  
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       dots: true,
+       arrows:true,
+   });
+</script>
+
+
+</body>
+</html>
